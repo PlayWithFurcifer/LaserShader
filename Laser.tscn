@@ -1,0 +1,387 @@
+[gd_scene load_steps=46 format=2]
+
+[ext_resource path="res://Pixel.png" type="Texture" id=1]
+[ext_resource path="res://Laser.shader" type="Shader" id=2]
+
+[sub_resource type="OpenSimplexNoise" id=44]
+lacunarity = 4.0
+
+[sub_resource type="NoiseTexture" id=45]
+seamless = true
+noise = SubResource( 44 )
+
+[sub_resource type="OpenSimplexNoise" id=46]
+
+[sub_resource type="NoiseTexture" id=47]
+seamless = true
+noise = SubResource( 46 )
+
+[sub_resource type="OpenSimplexNoise" id=48]
+
+[sub_resource type="NoiseTexture" id=49]
+seamless = true
+noise = SubResource( 48 )
+
+[sub_resource type="ShaderMaterial" id=50]
+shader = ExtResource( 2 )
+shader_param/scroll1 = Vector2( 1, 0.4 )
+shader_param/scroll2 = Vector2( 0.2, 1.4 )
+shader_param/speed = 0.199
+shader_param/xStretch = 3.482
+shader_param/yStretch = 0.1
+shader_param/laserSize = 0.696
+shader_param/wobbliness = 0.38
+shader_param/color1 = Color( 0, 0, 0, 1 )
+shader_param/color2 = Color( 1, 0, 0, 1 )
+shader_param/colorMixFactor = 3.298
+shader_param/glowFactor = 2.955
+shader_param/minAlpha = 0.3
+shader_param/NOISE_PATTERN1 = SubResource( 45 )
+shader_param/NOISE_PATTERN2 = SubResource( 47 )
+shader_param/TRANSPARENCY_VARIATION = SubResource( 49 )
+
+[sub_resource type="OpenSimplexNoise" id=2]
+
+[sub_resource type="NoiseTexture" id=3]
+seamless = true
+noise = SubResource( 2 )
+
+[sub_resource type="OpenSimplexNoise" id=4]
+persistence = 1.0
+lacunarity = 4.0
+
+[sub_resource type="NoiseTexture" id=5]
+seamless = true
+noise = SubResource( 4 )
+
+[sub_resource type="OpenSimplexNoise" id=6]
+
+[sub_resource type="NoiseTexture" id=7]
+seamless = true
+noise = SubResource( 6 )
+
+[sub_resource type="ShaderMaterial" id=8]
+shader = ExtResource( 2 )
+shader_param/scroll1 = Vector2( -5, 0.4 )
+shader_param/scroll2 = Vector2( 0.2, 1.2 )
+shader_param/speed = 0.093
+shader_param/xStretch = 1.111
+shader_param/yStretch = 0.004
+shader_param/laserSize = 0.69
+shader_param/wobbliness = 0.451
+shader_param/color1 = null
+shader_param/color2 = Color( 1, 0.866667, 0, 1 )
+shader_param/colorMixFactor = 4.0
+shader_param/glowFactor = 2.5
+shader_param/minAlpha = 0.3
+shader_param/NOISE_PATTERN1 = SubResource( 3 )
+shader_param/NOISE_PATTERN2 = SubResource( 5 )
+shader_param/TRANSPARENCY_VARIATION = SubResource( 7 )
+
+[sub_resource type="OpenSimplexNoise" id=10]
+period = 72.0
+persistence = 0.444
+lacunarity = 2.74
+
+[sub_resource type="NoiseTexture" id=11]
+seamless = true
+noise = SubResource( 10 )
+
+[sub_resource type="OpenSimplexNoise" id=12]
+period = 164.6
+persistence = 0.0
+lacunarity = 0.1
+
+[sub_resource type="NoiseTexture" id=13]
+seamless = true
+noise = SubResource( 12 )
+
+[sub_resource type="OpenSimplexNoise" id=14]
+
+[sub_resource type="NoiseTexture" id=15]
+seamless = true
+noise = SubResource( 14 )
+
+[sub_resource type="ShaderMaterial" id=16]
+shader = ExtResource( 2 )
+shader_param/scroll1 = Vector2( -5, 0.4 )
+shader_param/scroll2 = Vector2( 3, -2 )
+shader_param/speed = 0.093
+shader_param/xStretch = 0.937
+shader_param/yStretch = 0.5
+shader_param/laserSize = 0.668
+shader_param/wobbliness = 0.387
+shader_param/color1 = Color( 1, 1, 1, 1 )
+shader_param/color2 = Color( 0.776471, 0, 0.643137, 1 )
+shader_param/colorMixFactor = 5.744
+shader_param/glowFactor = 2.5
+shader_param/minAlpha = 0.3
+shader_param/NOISE_PATTERN1 = SubResource( 11 )
+shader_param/NOISE_PATTERN2 = SubResource( 13 )
+shader_param/TRANSPARENCY_VARIATION = SubResource( 15 )
+
+[sub_resource type="OpenSimplexNoise" id=18]
+period = 72.0
+persistence = 0.201
+lacunarity = 0.47
+
+[sub_resource type="NoiseTexture" id=19]
+seamless = true
+noise = SubResource( 18 )
+
+[sub_resource type="OpenSimplexNoise" id=20]
+seed = 2
+period = 66.8
+persistence = 0.0
+lacunarity = 0.1
+
+[sub_resource type="NoiseTexture" id=21]
+seamless = true
+noise = SubResource( 20 )
+
+[sub_resource type="OpenSimplexNoise" id=22]
+persistence = 1.0
+lacunarity = 1.52
+
+[sub_resource type="NoiseTexture" id=23]
+seamless = true
+noise = SubResource( 22 )
+
+[sub_resource type="ShaderMaterial" id=24]
+shader = ExtResource( 2 )
+shader_param/scroll1 = Vector2( 2, 3 )
+shader_param/scroll2 = Vector2( -2, -2 )
+shader_param/speed = 0.093
+shader_param/xStretch = 1.0
+shader_param/yStretch = 0.5
+shader_param/laserSize = 0.7
+shader_param/wobbliness = 0.32
+shader_param/color1 = Color( 0.0431373, 0.0470588, 0.207843, 1 )
+shader_param/color2 = Color( 0, 0.866667, 1, 1 )
+shader_param/colorMixFactor = 3.586
+shader_param/glowFactor = 3.036
+shader_param/minAlpha = 0.3
+shader_param/NOISE_PATTERN1 = SubResource( 19 )
+shader_param/NOISE_PATTERN2 = SubResource( 21 )
+shader_param/TRANSPARENCY_VARIATION = SubResource( 23 )
+
+[sub_resource type="OpenSimplexNoise" id=26]
+period = 51.9
+persistence = 0.0
+lacunarity = 0.1
+
+[sub_resource type="NoiseTexture" id=27]
+seamless = true
+noise = SubResource( 26 )
+
+[sub_resource type="OpenSimplexNoise" id=28]
+seed = 2
+period = 15.0
+persistence = 0.618
+lacunarity = 0.1
+
+[sub_resource type="NoiseTexture" id=29]
+seamless = true
+noise = SubResource( 28 )
+
+[sub_resource type="OpenSimplexNoise" id=30]
+period = 104.3
+persistence = 1.0
+lacunarity = 1.52
+
+[sub_resource type="NoiseTexture" id=31]
+seamless = true
+noise = SubResource( 30 )
+
+[sub_resource type="ShaderMaterial" id=32]
+shader = ExtResource( 2 )
+shader_param/scroll1 = Vector2( 2, 1 )
+shader_param/scroll2 = Vector2( 1, -1 )
+shader_param/speed = 0.264
+shader_param/xStretch = 1.562
+shader_param/yStretch = 0.564
+shader_param/laserSize = 0.721
+shader_param/wobbliness = 0.387
+shader_param/color1 = Color( 0, 0, 0, 1 )
+shader_param/color2 = Color( 0.129412, 1, 0, 1 )
+shader_param/colorMixFactor = 2.38
+shader_param/glowFactor = 3.579
+shader_param/minAlpha = 0.3
+shader_param/NOISE_PATTERN1 = SubResource( 27 )
+shader_param/NOISE_PATTERN2 = SubResource( 29 )
+shader_param/TRANSPARENCY_VARIATION = SubResource( 31 )
+
+[sub_resource type="OpenSimplexNoise" id=42]
+
+[sub_resource type="NoiseTexture" id=43]
+seamless = true
+noise = SubResource( 42 )
+
+[sub_resource type="OpenSimplexNoise" id=36]
+persistence = 1.0
+lacunarity = 4.0
+
+[sub_resource type="NoiseTexture" id=37]
+seamless = true
+noise = SubResource( 36 )
+
+[sub_resource type="OpenSimplexNoise" id=38]
+
+[sub_resource type="NoiseTexture" id=39]
+seamless = true
+noise = SubResource( 38 )
+
+[sub_resource type="ShaderMaterial" id=40]
+shader = ExtResource( 2 )
+shader_param/scroll1 = Vector2( 1, 0.4 )
+shader_param/scroll2 = Vector2( 0.2, 1.2 )
+shader_param/speed = 0.115
+shader_param/xStretch = 2.315
+shader_param/yStretch = 0.1
+shader_param/laserSize = 0.698
+shader_param/wobbliness = 0.344
+shader_param/color1 = Color( 0, 0, 0, 1 )
+shader_param/color2 = Color( 1, 0, 0, 1 )
+shader_param/colorMixFactor = 1.074
+shader_param/glowFactor = 6.258
+shader_param/minAlpha = 0.3
+shader_param/NOISE_PATTERN1 = SubResource( 43 )
+shader_param/NOISE_PATTERN2 = SubResource( 37 )
+shader_param/TRANSPARENCY_VARIATION = SubResource( 39 )
+
+[sub_resource type="Animation" id=41]
+length = 60.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Line2D2:material:shader_param/laserSize")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3.1, 4.4, 8.9, 42.5, 44 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.6, 0.69, 0.69, 0.5 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Line2D3:material:shader_param/laserSize")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3.1, 42.5, 44 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.4, 0.668, 0.668, 0.5 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Line2D4:material:shader_param/laserSize")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 10, 10.7, 15, 42.5, 44 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.5, 0.7, 0.7, 0.5 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Line2D5:material:shader_param/laserSize")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 15.5, 16.4, 21, 42.5, 44 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.5, 0.721, 0.721, 0.4 ]
+}
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 42.7148, 256.289 )
+
+[node name="Line2D" type="Line2D" parent="."]
+material = SubResource( 50 )
+position = Vector2( -81.9394, -236.839 )
+points = PoolVector2Array( 231.73, 214.846, 285, 175.5, 327.5, 159.5, 369.723, 132.121, 425.846, 118.651, 511.154, 125.386, 578.501, 156.815, 625.645, 212.938, 686.258, 260.081, 751.36, 278.041, 872.586, 271.306, 1018.51, 246.612, 1124.02, 192.733, 1263.2, 98.4467 )
+width = 200.0
+default_color = Color( 0.4, 0.501961, 1, 0 )
+texture = ExtResource( 1 )
+texture_mode = 2
+
+[node name="Line2D2" type="Line2D" parent="."]
+material = SubResource( 8 )
+position = Vector2( 483.391, 1717.23 )
+scale = Vector2( 3.4179, 2.68724 )
+points = PoolVector2Array( 200.165, -356.588, -88.3902, -352.359 )
+width = 50.0
+default_color = Color( 0.4, 0.501961, 1, 0 )
+texture = ExtResource( 1 )
+texture_mode = 2
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+round_precision = 14
+
+[node name="Line2D3" type="Line2D" parent="."]
+material = SubResource( 16 )
+position = Vector2( 481.682, 1482.65 )
+scale = Vector2( 3.4179, 2.68724 )
+points = PoolVector2Array( 196.421, -350.451, -88.8925, -351.821 )
+width = 50.0
+default_color = Color( 0.4, 0.501961, 1, 0 )
+texture = ExtResource( 1 )
+texture_mode = 2
+begin_cap_mode = 1
+end_cap_mode = 1
+round_precision = 14
+
+[node name="Line2D4" type="Line2D" parent="."]
+material = SubResource( 24 )
+position = Vector2( 477.056, 1923.57 )
+scale = Vector2( 3.4179, 2.68724 )
+points = PoolVector2Array( 206.416, -358.09, -87.1055, -355.787 )
+width = 50.0
+default_color = Color( 0.4, 0.501961, 1, 0 )
+texture = ExtResource( 1 )
+texture_mode = 2
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2
+round_precision = 14
+
+[node name="Line2D5" type="Line2D" parent="."]
+material = SubResource( 32 )
+position = Vector2( 493.955, 2102.61 )
+scale = Vector2( 3.4179, 2.68724 )
+points = PoolVector2Array( 199.704, -352.309, -88.3902, -352.359 )
+width = 50.0
+default_color = Color( 0.4, 0.501961, 1, 0 )
+texture = ExtResource( 1 )
+texture_mode = 2
+joint_mode = 2
+begin_cap_mode = 1
+end_cap_mode = 1
+round_precision = 14
+
+[node name="Line2D6" type="Line2D" parent="."]
+material = SubResource( 40 )
+position = Vector2( 573.912, 617.723 )
+rotation = 1.5708
+scale = Vector2( 2.60467, 2.68724 )
+points = PoolVector2Array( -127.304, 139.058, -127.237, -219.984 )
+width = 90.0
+default_color = Color( 0.588235, 0.329412, 0.65098, 0 )
+texture = ExtResource( 1 )
+texture_mode = 2
+joint_mode = 2
+begin_cap_mode = 1
+end_cap_mode = 2
+sharp_limit = 10.0
+round_precision = 19
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Laser! = SubResource( 41 )
